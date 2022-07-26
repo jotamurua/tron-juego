@@ -1,0 +1,15 @@
+.board {
+    margin: 10px;
+    border: 1px #777 solid;
+    outline: 1px solid #333;
+    outline-offset: 5px;
+}
+.instrucciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.instrucciones-jugador {
+    padding-left: 10px;
+    padding-right: 10px;
+}
