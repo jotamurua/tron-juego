@@ -49,10 +49,10 @@ useEffect(function() {
          {`${player.id}: ${player.instructions}`}
         </div>
       ))}
+      
+    <audio src={musica} autoPlay />
     </div>
-    <audio autoPlay >
-                    <source src={musica} type=""/>
-                  </audio>
+    
     </>
   )
 }
