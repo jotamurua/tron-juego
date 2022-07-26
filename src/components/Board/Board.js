@@ -1,7 +1,6 @@
 import './Board.css'
 import { useEffect, useRef } from 'react'
 import { boardSize, gameReady, unit } from '../../config/config';
-import musica from '../../utils/musica.mp3'
 
 
 
@@ -49,8 +48,6 @@ useEffect(function() {
          {`${player.id}: ${player.instructions}`}
         </div>
       ))}
-      
-    <audio src={musica} autoPlay />
     </div>
     
     </>
