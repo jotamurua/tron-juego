@@ -3,12 +3,12 @@ import Button from '../Button/Button'
 
 const Result = ({result, onClick}) => {
   return (
-    <div>
+    <div className='play'>
         <h1>
             {result}
         </h1>
         <Button onClick={onClick}>
-            {result}
+            Volver a jugar
         </Button>
     </div>
   )

@@ -14,7 +14,7 @@ useEffect(function() {
     context.clearRect(0,0, boardSize, boardSize)
 
     context.beginPath();
-    context.strokeStyle = '#001900';
+    context.strokeStyle = '#94167F';
     for (let i = unit * 2; i <= boardSize; i += unit *2){
         context.moveTo(i,0);
         context.lineTo(i, boardSize);

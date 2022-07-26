@@ -13,7 +13,7 @@ export const direction = {
 }
 
 export const playerOne =  {
-    color: '#CC0000',
+    color: '#43D9D9',
     id: '1',
     keys: {
         38 : direction.up,
@@ -28,7 +28,7 @@ export const playerOne =  {
 }
 
 export const playerTwo =  {
-    color: '#0000CC',
+    color: '#fcec0c',
     id: '2',
     keys: {
         87 : direction.up,

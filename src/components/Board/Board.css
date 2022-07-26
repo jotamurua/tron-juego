@@ -1,7 +1,7 @@
 .board {
     margin: 10px;
-    border: 1px #777 solid;
-    outline: 1px solid #333;
+    border: 1px #300350 solid;
+    outline: 1px solid #E93479;
     outline-offset: 5px;
 }
 .instrucciones {
