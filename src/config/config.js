@@ -13,7 +13,7 @@ export const direction = {
 }
 
 export const playerOne =  {
-    color: '#43D9D9',
+    color: '#00FF9F',
     id: '1',
     keys: {
         38 : direction.up,
@@ -40,4 +40,32 @@ export const playerTwo =  {
     position: {x: unit * 43, y: unit * 43 },
     hasDied: false,
     instructions: 'WASD'
+}
+export const playerThree =  {
+    color: '#0C4383',
+    id: '3',
+    keys: {
+        73 : direction.up,
+        74 : direction.right,
+        75 : direction.down,
+        76 : direction.left
+    },
+    direction: direction.right,
+    position: {x: unit * 6, y: unit * 43 },
+    hasDied: false,
+    instructions: 'IJKL'
+}
+export const playerFour =  {
+    color: '#FFA5A5',
+    id: '4',
+    keys: {
+        104 : direction.up,
+        100 : direction.right,
+        101 : direction.down,
+        102 : direction.left
+    },
+    direction: direction.left,
+    position: {x: unit * 43, y: unit * 6 },
+    hasDied: false,
+    instructions: 'Numpad 8456'
 }

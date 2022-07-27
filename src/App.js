@@ -1,18 +1,19 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useContext} from "react";
 import "./App.css";
 import Board from "./components/Board/Board";
+import { PlayerContext } from "./components/playersContext/playerContext";
 import Result from "./components/Result/Result";
 import Start from "./components/Start/Start";
-import { boardSize, gameEnded, gamePlaying, gameReady, playerOne, playerTwo, unit } from "./config/config";
+import { boardSize, gameEnded, gamePlaying, gameReady, playerFour, playerOne, playerThree, playerTwo, unit } from "./config/config";
 import { useInterval } from "./hook/useInterval";
 import getCellKey from "./utils/getCellKey";
 import getPlayableCells from "./utils/getPlayableCells";
 import playerCanchangeToDirection from "./utils/playerCanChangeToDirection";
 import { sumCoordinates } from "./utils/sumCoordinates";
 
-
-const players = [playerOne, playerTwo];
-
+function App() {
+const { howManyPlayers, setMultiplayer } = useContext(PlayerContext)
+const players = howManyPlayers === 2 ? [playerOne, playerTwo] : howManyPlayers === 3 ? [playerOne, playerTwo, playerThree] : [playerOne, playerTwo, playerThree, playerFour]
 const initialState = {
   players,
   playableCells: getPlayableCells(
@@ -79,12 +80,12 @@ function updateGame(game, action) {
     };
   }
 }
-function App() {
+
   let result = null;
   const [game, gameDispatch] = useReducer(updateGame, initialState);
 
-  const players = game.players;
-  const diedPlayers = players.filter((player) => player.hasDied);
+  const multiPlayers = game.players;
+  const diedPlayers = multiPlayers.filter((player) => player.hasDied);
   if (diedPlayers.length > 0) {
     console.log(diedPlayers);
   }
@@ -98,14 +99,6 @@ function App() {
   useEffect(function () {
     function handleKeyPress(event) {
       const key = `${event.keyCode}`;
-      if (key === '13') {
-        if (game.gameStatus === gameReady){
-          handleStart()
-        }
-        if (game.gameStatus === gameEnded){
-          handleRestart()
-        }
-      }
       gameDispatch({ type: "changeDirection", key });
     }
     document.addEventListener("keydown", handleKeyPress);
@@ -115,8 +108,17 @@ function App() {
     };
   }, [game.gameStatus]);
 
-  function handleStart () {
+  function startTwoPlayers () {
     gameDispatch({type: 'start'})
+    setMultiplayer(2)
+  }
+  function startThreePlayers () {
+    gameDispatch({type: 'start'})
+    setMultiplayer(3)
+  }
+  function startFourPlayers () {
+    gameDispatch({type: 'start'})
+    setMultiplayer(4)
   }
 
   function handleRestart() {
@@ -137,7 +139,7 @@ function App() {
     <div className="App">
       <Board players={game.players} gameStatus={game.gameStatus}/>
       {game.gameStatus === gameEnded && <Result onClick={handleRestart} result={result}/>} 
-      {game.gameStatus === gameReady && <Start onClick={handleStart}/>}
+      {game.gameStatus === gameReady && <Start twoPlayers={startTwoPlayers} threePlayers={startThreePlayers} fourPlayers={startFourPlayers}/>}
     </div>
   );
 }
