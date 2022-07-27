@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Bienvenida/o a mi versión del Clasico juego TRON
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Soy Joel Murúa, estudiante de programación Fullstack en Argentina Programa con orientación de Front End en Angular y también estudié React.js en Coderhouse.
 
-## Available Scripts
+En este juego utilicé las siguientes funciones: 
+- Customhooks, en especifico el clásico useInterval
+- Hooks de react como useReduce, useState, useEffect, useContext
+- algunas funciones de canvas para dibujar el tablero y sus jugadores.
+- Gracia useContext le dí un retoque propio a esta versión del juego y agregué las opciones para jugar de a 3 o 4 jugadores.
 
-In the project directory, you can run:
+Acá te dejo el link con el deploy de la web:
+[TRON](https://juegotron.netlify.app/)
 
-### `npm start`
+Si queres compilar por vos misma/o este proyecto podes hacerlo siguiendo estos pasos:
+ -clonar el repositorio desde github:
+ podes hacerlo manualmente o desde simbolo de sistema una vez dentro del directorio deseado con el siguiente codigo
+ `git clone https://github.com/jotamurua/tron-juego.git`
+-ejecutar los siguientes comandos desde el directorio de simbolo de sistema o la terminal del editor de codigo que estes usando:
+`npm i`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Muchas gracias por leerme, aquí debajo te dejo mis contactos.
+Un saludo!
+Joel
 
-### `npm test`
+*joel.l.murua@gmail.com*
+[Linkedin](https://www.linkedin.com/in/joelmurua/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Portfolio](https://portfoliomurua.netlify.app/)
