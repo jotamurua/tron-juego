@@ -19,7 +19,9 @@ const initialState = {
   playableCells: getPlayableCells(
     boardSize,
     unit,
-    players.map((player) => getCellKey(player.position.x, player.position.y))
+    players
+    .map((player) => getCellKey(player.position.x, player.position.y))
+    
   ),
   gameStatus: gameReady
 };

@@ -46,9 +46,9 @@ export const playerThree =  {
     id: '3',
     keys: {
         73 : direction.up,
-        74 : direction.right,
+        74 : direction.left,
         75 : direction.down,
-        76 : direction.left
+        76 : direction.right
     },
     direction: direction.right,
     position: {x: unit * 6, y: unit * 43 },
@@ -60,9 +60,9 @@ export const playerFour =  {
     id: '4',
     keys: {
         104 : direction.up,
-        100 : direction.right,
+        100 : direction.left,
         101 : direction.down,
-        102 : direction.left
+        102 : direction.right
     },
     direction: direction.left,
     position: {x: unit * 43, y: unit * 6 },
